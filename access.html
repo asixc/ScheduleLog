@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login schedule log</title>
+	<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+	<script src="js/iniFirebase.js"></script>
+</head>
+<body>
+	<main>
+		<div id="box">
+			<input type="text" id="user" placeholder="User" /><br />
+			<input type="password" id="pss" placeholder="Password" />
+			<div>
+				<button onclick="login(user.value,pss.value)">Go!</button>
+			</div>
+		</div>
+	</main>
+	<script src="js/access.js"></script>
+</body>
+</html>

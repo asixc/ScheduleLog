@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Main schedule log</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+	<script src="js/iniFirebase.js"></script>
+</head>
+<body>
+	<main>
+		<section id="title">
+			<h1>Schedule Log</h1>
+			<p class="p1">Control del horas aplicadas a cada proyecto</p>
+			<button onclick="logOut()">Log Out!</button>
+		</section>
+		<hr>
+		<section class="flexbox marcadores">
+			<div>
+				<h3>JOBS</h3>
+				<h3 id="rJobs"></h3>
+			</div>
+			<div>
+				<h3>DAYS</h3>
+				<h3 id="rDays"></h3>
+			</div>
+			<div>
+				<h3>UATES</h3>
+				<h3 id="rUates"></h3>
+			</div>
+			<div>
+				<h3>HORAS</h3>
+				<h3 id="rHoras"></h3>
+			</div>
+		</section>
+		<hr>
+		<section id="opciones" class="flexbox">
+			<div>
+				<p>Day <span id="openModal">+</span></p>
+			</div>
+			<div>
+				<p>Job <span>+</span></p>
+			</div>
+
+		</section>
+	</main>
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close" id="closeModal">&times;</span>
+			<div id="contentModal">
+				<p class="p1">Añadir registro Día</p>
+				<label>Fecha:</label>
+				<input id="fecha_registrar" type="Date" />
+				<br />
+				<label>Job:</label>
+				<select id="selectJobs"></select>
+				<br />
+				<label>Hora Inicio:</label>
+				<input id="hini" type="time" />
+				<label>Hora fin:</label>
+				<input id="hfin" type="time" />
+				<br />
+				<label>Tiempo Comiendo</label>
+				<input id="tcomida" type="time" />
+				<br />
+				<label>Comentario:</label>
+				<input id="comment" type="textarea" rows="4" cols="50"  />
+				<br />
+				<button onclick="agregateDay(fecha_registrar.value,hini.value,hfin.value,tcomida.value,comment.value,selectJobs.value)">Guardar</button>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<script src="js/index.js"></script>
+</body>
+</html>

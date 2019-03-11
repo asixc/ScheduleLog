@@ -1,0 +1,137 @@
+body{
+	font-family: "montserrat-regular", sans-serif;
+}
+.flexbox {
+	display: flex;
+	justify-content: center;
+}
+.flexbox div{
+	width: 200px;
+}
+/*------------------------------------------------------------------------*/
+						/* TITLE */
+/*------------------------------------------------------------------------*/
+#title{
+	text-align: center;
+}
+#title button{
+	position: absolute;
+	top:20px;
+	right: 20px;
+}
+.cdf{
+	color: #862121;
+}
+.p1{
+	
+	font-size: 2rem;
+	line-height: 1.8;
+	margin-bottom: 3.6rem;
+	color: #0D0A0B;
+}
+button {
+	text-transform: uppercase;
+    letter-spacing: .3rem;
+	background-color: #0a0809;
+	padding: 20px;
+	font-size: 1.6rem;
+	text-align: center;
+	outline: 0;	
+	color: #fff;
+	border:none;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background: #862121;
+    border-color: #862121;
+    color: #FFFFFF;
+}
+
+/*------------------------------------------------------------------------*/
+						/* INPUTS OPCIONES */
+/*------------------------------------------------------------------------*/
+#opciones p{
+	font-family: "librebaskerville-regular", serif;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    color: #5f5f5f;
+}
+#opciones div span{
+	padding: 5px 15px;
+    background: grey;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+}
+#opciones div span:hover{
+	cursor: pointer;
+	background: #862121;
+	color: #FFFFFF;
+    
+}
+/*------------------------------------------------------------------------*/
+						/* MARCADORES */
+/*------------------------------------------------------------------------*/
+.marcadores > div {
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------*/
+						/* MODAL */
+/*------------------------------------------------------------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#contentModal{
+	width: 50%;
+	margin: auto;
+}
+#contentModal button{
+	display: block;
+	margin: auto;
+}
+#contentModal p{
+	text-align: center;
+	margin-bottom: 2.6rem;
+}
+#contentModal input{
+	margin-bottom: 15px;
+}
+#contentModal select{
+	margin-bottom: 15px;
+}
